@@ -1,0 +1,18 @@
+!!! 5
+%html
+  %head
+    %title Tic Tac Toe
+    %link(rel="stylesheet" href="stylesheets/styles.css")
+    %script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js")
+    %script(type="text/javascript" src="javascript/application.js")
+  %h1 Welcome to Tic Tac Toe!
+  %body
+    .board
+      - (1..9).each do |cell|
+        %form{:action => "/turn", :method => "post"}
+          %input{:type => "hidden", :name => "player_move", :value => "#{cell}"}
+          %input.cell{:type => "submit", :id => "cell#{cell}", :value => "#{cell}" }
+      
+    %a{:href => "/"} Click to play again!
+    :javascript
+      disableButton();

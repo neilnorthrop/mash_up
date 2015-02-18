@@ -1,0 +1,16 @@
+!!! 5
+%html
+  %head
+    %title Tic Tac Toe
+    %link(rel="stylesheet" href="stylesheets/styles.css")
+    %script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js")
+    %script(type="text/javascript" src="javascript/application.js")
+  %h1 Welcome to Tic Tac Toe!
+  %body
+    %h3 Pick your board size and opponent:
+
+    %form{ :action => "/decide", :method => "post" }
+      %input{ :type => "radio", :name => "board", :id => "3x3", :value => "" } 3x3
+      %input{ :type => "radio", :name => "board", :id => "4x4", :value => "4x4" } 4x4
+      %input{ :type => "submit", :name => "opponent", :id => "computer", :value => "Computer" }
+      %input{ :type => "submit", :name => "opponent", :id => "player", :value => "Player" }

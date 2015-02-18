@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <link href='stylesheets/styles.css' rel='stylesheet'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js' type='text/javascript'></script>
+    <script src='javascript/application.js' type='text/javascript'></script>
+  </head>
+  <h1>Welcome to Tic Tac Toe!</h1>
+  <body>
+    <h3>Pick your board size and opponent:</h3>
+    <form action='/decide' method='post'>
+      <input id='3x3' name='board' type='radio' value='3'>3x3</input>
+      <input id='computer' name='opponent' type='submit' value='Computer'>
+      <input id='player' name='opponent' type='submit' value='Player'>
+    </form>
+  </body>
+</html>

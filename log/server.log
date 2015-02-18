@@ -1,0 +1,945 @@
+D, [2014-11-12T12:01:36.509757 #67317] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:01:36.510847 #67317] DEBUG -- : Server is set up.
+D, [2014-11-12T12:01:36.662018 #67367] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:01:36.750606 #67317] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:01:36.750732 #67317] DEBUG -- : Incoming request: #<Request:0x007fdc088934d8 @method="GET", @resource="/bad_request", @version="HTTP/1.1">
+D, [2014-11-12T12:01:36.750776 #67317] DEBUG -- : Requested path: "./public/bad_request"
+I, [2014-11-12T12:01:36.750954 #67317]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:01:36.751960 #67317] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:01:36.752060 #67317] DEBUG -- : Incoming request: #<Request:0x007fdc08891de0 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:01:36.752098 #67317] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:01:36.752198 #67317]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:01:36.752631 #67367] DEBUG -- : Server is set up.
+D, [2014-11-12T12:01:36.753033 #67367] DEBUG -- : Server is set up.
+D, [2014-11-12T12:01:36.753649 #67367] DEBUG -- : Server is set up.
+D, [2014-11-12T12:01:36.754437 #67317] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:01:36.754568 #67317] DEBUG -- : Incoming request: #<Request:0x007fdc08890260 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:01:36.754630 #67317] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:01:36.754740 #67317]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:01:36.755583 #67317] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:01:36.755692 #67317] DEBUG -- : Incoming request: #<Request:0x007fdc0888a9a0 @method="GET", @resource="/test.png", @version="HTTP/1.1">
+D, [2014-11-12T12:01:36.755737 #67317] DEBUG -- : Requested path: "./public/test.png"
+I, [2014-11-12T12:01:36.756030 #67317]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+D, [2014-11-12T12:02:46.142665 #67373] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:02:46.143610 #67373] DEBUG -- : Server is set up.
+D, [2014-11-12T12:02:46.311704 #67423] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:02:46.399686 #67373] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:02:46.399824 #67373] DEBUG -- : Incoming request: #<Request:0x007fac4c0398f0 @method="GET", @resource="/test.png", @version="HTTP/1.1">
+D, [2014-11-12T12:02:46.399867 #67373] DEBUG -- : Requested path: "./public/test.png"
+I, [2014-11-12T12:02:46.400270 #67373]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+D, [2014-11-12T12:02:46.401971 #67373] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:02:46.402152 #67373] DEBUG -- : Incoming request: #<Request:0x007fac4c033c48 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:02:46.402192 #67373] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:02:46.402313 #67373]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:02:46.402849 #67423] DEBUG -- : Server is set up.
+D, [2014-11-12T12:02:46.403861 #67423] DEBUG -- : Server is set up.
+D, [2014-11-12T12:02:46.404215 #67423] DEBUG -- : Server is set up.
+D, [2014-11-12T12:02:46.405055 #67373] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:02:46.405229 #67373] DEBUG -- : Incoming request: #<Request:0x007fac4c032398 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:02:46.405276 #67373] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:02:46.405388 #67373]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:02:46.406252 #67373] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:02:46.406344 #67373] DEBUG -- : Incoming request: #<Request:0x007fac4c030a20 @method="GET", @resource="/bad_request", @version="HTTP/1.1">
+D, [2014-11-12T12:02:46.406380 #67373] DEBUG -- : Requested path: "./public/bad_request"
+I, [2014-11-12T12:02:46.407004 #67373]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:02:53.210547 #67428] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:02:53.211599 #67428] DEBUG -- : Server is set up.
+D, [2014-11-12T12:02:53.373493 #67478] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:02:53.463704 #67428] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:02:53.463835 #67428] DEBUG -- : Incoming request: #<Request:0x007fb119890c48 @method="GET", @resource="/test.png", @version="HTTP/1.1">
+D, [2014-11-12T12:02:53.463877 #67428] DEBUG -- : Requested path: "./public/test.png"
+I, [2014-11-12T12:02:53.464326 #67428]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+D, [2014-11-12T12:02:53.465656 #67478] DEBUG -- : Server is set up.
+D, [2014-11-12T12:02:53.466632 #67428] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:02:53.466750 #67428] DEBUG -- : Incoming request: #<Request:0x007fb11988afc8 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:02:53.466790 #67428] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:02:53.466920 #67428]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:02:53.467852 #67478] DEBUG -- : Server is set up.
+D, [2014-11-12T12:02:53.468641 #67428] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:02:53.468788 #67428] DEBUG -- : Incoming request: #<Request:0x007fb1198896f0 @method="GET", @resource="/bad_request", @version="HTTP/1.1">
+D, [2014-11-12T12:02:53.468828 #67428] DEBUG -- : Requested path: "./public/bad_request"
+I, [2014-11-12T12:02:53.468949 #67428]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:02:53.469957 #67428] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:02:53.470033 #67428] DEBUG -- : Incoming request: #<Request:0x007fb119860d90 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:02:53.470075 #67428] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:02:53.470210 #67428]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:02:53.470705 #67478] DEBUG -- : Server is set up.
+D, [2014-11-12T12:15:23.692443 #67595] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:15:23.693557 #67595] DEBUG -- : Server is set up.
+D, [2014-11-12T12:15:23.842532 #67645] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:15:23.926305 #67645] DEBUG -- : Server is set up.
+D, [2014-11-12T12:15:23.927657 #67595] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:15:23.927763 #67595] DEBUG -- : Incoming request: #<Request:0x007f896b893518 @method="GET", @resource="/test.png", @version="HTTP/1.1">
+D, [2014-11-12T12:15:23.927802 #67595] DEBUG -- : Requested path: "./public/test.png"
+I, [2014-11-12T12:15:23.928200 #67595]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 
+Connection: close
+
+
+D, [2014-11-12T12:15:23.958306 #67595] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:15:23.958473 #67595] DEBUG -- : Incoming request: #<Request:0x007f896b891d30 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:15:23.958523 #67595] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:15:23.958627 #67595]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 
+Connection: close
+
+
+D, [2014-11-12T12:15:23.959802 #67645] DEBUG -- : Server is set up.
+D, [2014-11-12T12:15:23.960771 #67595] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:15:23.960926 #67595] DEBUG -- : Incoming request: #<Request:0x007f896b8901b0 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:15:23.961006 #67595] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:15:23.961116 #67595]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 
+Connection: close
+
+
+D, [2014-11-12T12:15:23.962063 #67595] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:15:23.962190 #67595] DEBUG -- : Incoming request: #<Request:0x007f896b88a8c8 @method="GET", @resource="/bad_request", @version="HTTP/1.1">
+D, [2014-11-12T12:15:23.962225 #67595] DEBUG -- : Requested path: "./public/bad_request"
+D, [2014-11-12T12:15:23.962800 #67645] DEBUG -- : Server is set up.
+D, [2014-11-12T12:15:35.226122 #67649] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:15:35.227259 #67649] DEBUG -- : Server is set up.
+D, [2014-11-12T12:15:35.377605 #67699] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:15:35.464892 #67649] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:15:35.465012 #67649] DEBUG -- : Incoming request: #<Request:0x007fdfc9093598 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:15:35.465054 #67649] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:15:35.465194 #67649]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:15:35.465810 #67699] DEBUG -- : Server is set up.
+D, [2014-11-12T12:15:35.466220 #67699] DEBUG -- : Server is set up.
+D, [2014-11-12T12:15:35.467082 #67649] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:15:35.467207 #67649] DEBUG -- : Incoming request: #<Request:0x007fdfc9091d88 @method="GET", @resource="/bad_request", @version="HTTP/1.1">
+D, [2014-11-12T12:15:35.467242 #67649] DEBUG -- : Requested path: "./public/bad_request"
+D, [2014-11-12T12:15:35.498279 #67699] DEBUG -- : Server is set up.
+D, [2014-11-12T12:15:35.499376 #67649] DEBUG -- : Accepted socket: #<TCPSocket:fd 12>
+D, [2014-11-12T12:15:35.499581 #67649] DEBUG -- : Incoming request: #<Request:0x007fdfc9090550 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:15:35.499662 #67649] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:15:35.499790 #67649]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:15:35.500797 #67649] DEBUG -- : Accepted socket: #<TCPSocket:fd 12>
+D, [2014-11-12T12:15:35.500955 #67649] DEBUG -- : Incoming request: #<Request:0x007fdfc908ac40 @method="GET", @resource="/test.png", @version="HTTP/1.1">
+D, [2014-11-12T12:15:35.500997 #67649] DEBUG -- : Requested path: "./public/test.png"
+I, [2014-11-12T12:15:35.501362 #67649]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+D, [2014-11-12T12:15:59.883522 #67703] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:15:59.884577 #67703] DEBUG -- : Server is set up.
+D, [2014-11-12T12:16:00.035557 #67753] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:16:00.120560 #67703] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:16:00.120667 #67703] DEBUG -- : Incoming request: #<Request:0x007f805b8935e0 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:16:00.120714 #67703] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:16:00.120849 #67703]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:16:00.121932 #67703] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:16:00.122099 #67703] DEBUG -- : Incoming request: #<Request:0x007f805b891df8 @method="GET", @resource="/test.png", @version="HTTP/1.1">
+D, [2014-11-12T12:16:00.122137 #67703] DEBUG -- : Requested path: "./public/test.png"
+I, [2014-11-12T12:16:00.122508 #67703]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+D, [2014-11-12T12:16:00.123631 #67753] DEBUG -- : Server is set up.
+D, [2014-11-12T12:16:00.124857 #67753] DEBUG -- : Server is set up.
+D, [2014-11-12T12:16:00.125727 #67703] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:16:00.125837 #67703] DEBUG -- : Incoming request: #<Request:0x007f805b8902a0 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:16:00.125902 #67703] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:16:00.126010 #67703]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:16:00.126503 #67753] DEBUG -- : Server is set up.
+D, [2014-11-12T12:16:00.127204 #67703] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:16:00.127315 #67703] DEBUG -- : Incoming request: #<Request:0x007f805b88a990 @method="GET", @resource="/bad_request", @version="HTTP/1.1">
+D, [2014-11-12T12:16:00.127358 #67703] DEBUG -- : Requested path: "./public/bad_request"
+D, [2014-11-12T12:16:06.698342 #67757] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:16:06.699414 #67757] DEBUG -- : Server is set up.
+D, [2014-11-12T12:16:06.848472 #67807] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:16:06.933965 #67807] DEBUG -- : Server is set up.
+D, [2014-11-12T12:16:06.934377 #67807] DEBUG -- : Server is set up.
+D, [2014-11-12T12:16:06.935753 #67757] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:16:06.935864 #67757] DEBUG -- : Incoming request: #<Request:0x007ff212893440 @method="GET", @resource="/bad_request", @version="HTTP/1.1">
+D, [2014-11-12T12:16:06.935901 #67757] DEBUG -- : Requested path: "./public/bad_request"
+D, [2014-11-12T12:16:06.965978 #67757] DEBUG -- : Accepted socket: #<TCPSocket:fd 12>
+D, [2014-11-12T12:16:06.966167 #67757] DEBUG -- : Incoming request: #<Request:0x007ff212891ff0 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:16:06.966216 #67757] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:16:06.966392 #67757]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:16:06.967210 #67807] DEBUG -- : Server is set up.
+D, [2014-11-12T12:16:06.968217 #67757] DEBUG -- : Accepted socket: #<TCPSocket:fd 12>
+D, [2014-11-12T12:16:06.968392 #67757] DEBUG -- : Incoming request: #<Request:0x007ff212890420 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:16:06.968457 #67757] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:16:06.968569 #67757]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:16:06.969509 #67757] DEBUG -- : Accepted socket: #<TCPSocket:fd 12>
+D, [2014-11-12T12:16:06.969666 #67757] DEBUG -- : Incoming request: #<Request:0x007ff21288aae8 @method="GET", @resource="/test.png", @version="HTTP/1.1">
+D, [2014-11-12T12:16:06.969703 #67757] DEBUG -- : Requested path: "./public/test.png"
+I, [2014-11-12T12:16:06.970054 #67757]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+D, [2014-11-12T12:16:33.506224 #67811] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:16:33.507237 #67811] DEBUG -- : Server is set up.
+D, [2014-11-12T12:16:33.660718 #67861] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:16:33.746045 #67811] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:16:33.746183 #67811] DEBUG -- : Incoming request: #<Request:0x007fc7e90934c8 @method="GET", @resource="/test.png", @version="HTTP/1.1">
+D, [2014-11-12T12:16:33.746226 #67811] DEBUG -- : Requested path: "./public/test.png"
+I, [2014-11-12T12:16:33.746606 #67811]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+D, [2014-11-12T12:16:33.748417 #67811] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:16:33.748530 #67811] DEBUG -- : Incoming request: #<Request:0x007fc7e9091c68 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:16:33.748567 #67811] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:16:33.748686 #67811]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:16:33.749234 #67861] DEBUG -- : Server is set up.
+D, [2014-11-12T12:16:33.750078 #67861] DEBUG -- : Server is set up.
+D, [2014-11-12T12:16:33.750798 #67811] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:16:33.751005 #67811] DEBUG -- : Incoming request: #<Request:0x007fc7e9090098 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:16:33.751043 #67811] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:16:33.751154 #67811]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:16:33.751633 #67861] DEBUG -- : Server is set up.
+D, [2014-11-12T12:16:33.752382 #67811] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:16:33.752493 #67811] DEBUG -- : Incoming request: #<Request:0x007fc7e908a6e8 @method="GET", @resource="/bad_request", @version="HTTP/1.1">
+D, [2014-11-12T12:16:33.752535 #67811] DEBUG -- : Requested path: "./public/bad_request"
+D, [2014-11-12T12:17:34.855038 #67865] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:17:34.856023 #67865] DEBUG -- : Server is set up.
+D, [2014-11-12T12:17:35.005504 #67915] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:17:35.094905 #67865] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:17:35.095011 #67865] DEBUG -- : Incoming request: #<Request:0x007f81430935f0 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:17:35.095052 #67865] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:17:35.095175 #67865]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:17:35.095831 #67915] DEBUG -- : Server is set up.
+D, [2014-11-12T12:17:35.096172 #67915] DEBUG -- : Server is set up.
+D, [2014-11-12T12:17:35.097111 #67865] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:17:35.097183 #67865] DEBUG -- : Incoming request: #<Request:0x007f8143091e08 @method="GET", @resource="/bad_request", @version="HTTP/1.1">
+D, [2014-11-12T12:17:35.097218 #67865] DEBUG -- : Requested path: "./public/bad_request"
+I, [2014-11-12T12:17:35.097331 #67865]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:17:35.098655 #67865] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:17:35.098760 #67865] DEBUG -- : Incoming request: #<Request:0x007f81430902d8 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:17:35.098872 #67865] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:17:35.099028 #67865]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:17:35.099397 #67915] DEBUG -- : Server is set up.
+D, [2014-11-12T12:17:35.100007 #67865] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:17:35.100084 #67865] DEBUG -- : Incoming request: #<Request:0x007f814308a9f0 @method="GET", @resource="/test.png", @version="HTTP/1.1">
+D, [2014-11-12T12:17:35.100124 #67865] DEBUG -- : Requested path: "./public/test.png"
+I, [2014-11-12T12:17:35.100379 #67865]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+D, [2014-11-12T12:17:43.351371 #67920] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:17:43.352434 #67920] DEBUG -- : Server is set up.
+D, [2014-11-12T12:17:43.504254 #67970] DEBUG -- : Logging is set up.
+D, [2014-11-12T12:17:43.591096 #67920] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:17:43.591224 #67920] DEBUG -- : Incoming request: #<Request:0x007f954280f550 @method="GET", @resource="/bad_request", @version="HTTP/1.1">
+D, [2014-11-12T12:17:43.591263 #67920] DEBUG -- : Requested path: "./public/bad_request"
+I, [2014-11-12T12:17:43.591397 #67920]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:17:43.592447 #67920] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:17:43.592609 #67920] DEBUG -- : Incoming request: #<Request:0x007f954280dd90 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:17:43.592663 #67920] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:17:43.592774 #67920]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:17:43.593260 #67970] DEBUG -- : Server is set up.
+D, [2014-11-12T12:17:43.593583 #67970] DEBUG -- : Server is set up.
+D, [2014-11-12T12:17:43.594788 #67920] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:17:43.594908 #67920] DEBUG -- : Incoming request: #<Request:0x007f954280c238 @method="GET", @resource="/test.png", @version="HTTP/1.1">
+D, [2014-11-12T12:17:43.594969 #67920] DEBUG -- : Requested path: "./public/test.png"
+I, [2014-11-12T12:17:43.595274 #67920]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+D, [2014-11-12T12:17:43.596853 #67920] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T12:17:43.596957 #67920] DEBUG -- : Incoming request: #<Request:0x007f9542806978 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T12:17:43.596990 #67920] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T12:17:43.597094 #67920]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T12:17:43.597474 #67970] DEBUG -- : Server is set up.
+D, [2014-11-12T15:32:38.643453 #68460] DEBUG -- : Logging is set up.
+D, [2014-11-12T15:32:38.644581 #68460] DEBUG -- : Server is set up.
+D, [2014-11-12T15:32:38.854887 #68510] DEBUG -- : Logging is set up.
+D, [2014-11-12T15:32:38.968891 #68510] DEBUG -- : Server is set up.
+D, [2014-11-12T15:32:38.970352 #68460] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:32:38.970491 #68460] DEBUG -- : Incoming request: #<Request:0x007fe332893c68 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T15:32:38.970529 #68460] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T15:32:38.970619 #68460]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:32:38.971286 #68510] DEBUG -- : Server is set up.
+D, [2014-11-12T15:32:38.972180 #68460] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:32:38.972324 #68460] DEBUG -- : Incoming request: #<Request:0x007fe332892458 @method="GET", @resource="/bad_request", @version="HTTP/1.1">
+D, [2014-11-12T15:32:38.972362 #68460] DEBUG -- : Requested path: "./public/bad_request"
+I, [2014-11-12T15:32:38.972444 #68460]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:32:38.973963 #68460] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:32:38.974094 #68460] DEBUG -- : Incoming request: #<Request:0x007fe3328908d8 @method="GET", @resource="/test.png", @version="HTTP/1.1">
+D, [2014-11-12T15:32:38.974127 #68460] DEBUG -- : Requested path: "./public/test.png"
+I, [2014-11-12T15:32:38.974229 #68460]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+D, [2014-11-12T15:32:38.975293 #68460] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:32:38.975469 #68460] DEBUG -- : Incoming request: #<Request:0x007fe33288b040 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T15:32:38.975506 #68460] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T15:32:38.975578 #68460]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:32:38.976182 #68510] DEBUG -- : Server is set up.
+D, [2014-11-12T15:32:58.176506 #68514] DEBUG -- : Logging is set up.
+D, [2014-11-12T15:32:58.177813 #68514] DEBUG -- : Server is set up.
+D, [2014-11-12T15:33:04.692029 #68514] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:33:04.692187 #68514] DEBUG -- : Incoming request: #<Request:0x007fb0d4093c10 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T15:33:04.692231 #68514] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T15:33:04.693317 #68514]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:33:04.788047 #68514] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:33:04.788141 #68514] DEBUG -- : Incoming request: #<Request:0x007fb0d4092428 @method="GET", @resource="/favicon.ico", @version="HTTP/1.1">
+D, [2014-11-12T15:33:04.788185 #68514] DEBUG -- : Requested path: "./public/favicon.ico"
+I, [2014-11-12T15:33:04.788266 #68514]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:33:11.186931 #68514] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:33:11.187047 #68514] DEBUG -- : Incoming request: #<Request:0x007fb0d4090830 @method="GET", @resource="/index.html", @version="HTTP/1.1">
+D, [2014-11-12T15:33:11.187093 #68514] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T15:33:11.187224 #68514]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:33:11.225642 #68514] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:33:11.225752 #68514] DEBUG -- : Incoming request: #<Request:0x007fb0d408afc0 @method="GET", @resource="/favicon.ico", @version="HTTP/1.1">
+D, [2014-11-12T15:33:11.225790 #68514] DEBUG -- : Requested path: "./public/favicon.ico"
+I, [2014-11-12T15:33:11.225869 #68514]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:33:16.554450 #68514] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:33:16.554637 #68514] DEBUG -- : Incoming request: #<Request:0x007fb0d4089530 @method="GET", @resource="/public/index.html", @version="HTTP/1.1">
+D, [2014-11-12T15:33:16.554768 #68514] DEBUG -- : Requested path: "./public/public/index.html"
+I, [2014-11-12T15:33:16.554913 #68514]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:33:16.571482 #68514] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:33:16.571589 #68514] DEBUG -- : Incoming request: #<Request:0x007fb0d40610d0 @method="GET", @resource="/favicon.ico", @version="HTTP/1.1">
+D, [2014-11-12T15:33:16.571627 #68514] DEBUG -- : Requested path: "./public/favicon.ico"
+I, [2014-11-12T15:33:16.571731 #68514]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:33:23.987633 #68514] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:33:23.987727 #68514] DEBUG -- : Incoming request: #<Request:0x007fb0d4051c20 @method="GET", @resource="/lkjsdklfjaskdjlf", @version="HTTP/1.1">
+D, [2014-11-12T15:33:23.987774 #68514] DEBUG -- : Requested path: "./public/lkjsdklfjaskdjlf"
+I, [2014-11-12T15:33:23.987883 #68514]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:33:24.064197 #68514] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:33:24.064320 #68514] DEBUG -- : Incoming request: #<Request:0x007fb0d40505f0 @method="GET", @resource="/lkjsdklfjaskdjlf", @version="HTTP/1.1">
+D, [2014-11-12T15:33:24.064357 #68514] DEBUG -- : Requested path: "./public/lkjsdklfjaskdjlf"
+I, [2014-11-12T15:33:24.064430 #68514]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:33:25.523384 #68514] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:33:25.523487 #68514] DEBUG -- : Incoming request: #<Request:0x007fb0d404a5d8 @method="GET", @resource="/lkjsdklfjaskdjlf", @version="HTTP/1.1">
+D, [2014-11-12T15:33:25.523531 #68514] DEBUG -- : Requested path: "./public/lkjsdklfjaskdjlf"
+I, [2014-11-12T15:33:25.523628 #68514]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:33:30.529133 #68514] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:33:30.529298 #68514] DEBUG -- : Incoming request: #<Request:0x007fb0d40483c8 @method="GET", @resource="/lkjsdklfjaskdjlf", @version="HTTP/1.1">
+D, [2014-11-12T15:33:30.529401 #68514] DEBUG -- : Requested path: "./public/lkjsdklfjaskdjlf"
+I, [2014-11-12T15:33:30.529501 #68514]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:33:41.398414 #68545] DEBUG -- : Logging is set up.
+D, [2014-11-12T15:33:41.399680 #68545] DEBUG -- : Server is set up.
+D, [2014-11-12T15:33:44.186853 #68545] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:33:44.186983 #68545] DEBUG -- : Incoming request: #<Request:0x007ff66c0935e8 @method="GET", @resource="/lkjsdklfjaskdjlf", @version="HTTP/1.1">
+D, [2014-11-12T15:33:44.187029 #68545] DEBUG -- : Requested path: "./public/lkjsdklfjaskdjlf"
+I, [2014-11-12T15:33:44.187167 #68545]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:33:47.707476 #68545] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:33:47.707616 #68545] DEBUG -- : Incoming request: #<Request:0x007ff66c091e50 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-12T15:33:47.707676 #68545] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-12T15:33:47.707844 #68545]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:33:47.767852 #68545] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:33:47.768013 #68545] DEBUG -- : Incoming request: #<Request:0x007ff66c0902a8 @method="GET", @resource="/favicon.ico", @version="HTTP/1.1">
+D, [2014-11-12T15:33:47.768096 #68545] DEBUG -- : Requested path: "./public/favicon.ico"
+I, [2014-11-12T15:33:47.768248 #68545]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:33:52.186708 #68545] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:33:52.186823 #68545] DEBUG -- : Incoming request: #<Request:0x007ff66c08a998 @method="GET", @resource="/lkdlfksdf", @version="HTTP/1.1">
+D, [2014-11-12T15:33:52.186905 #68545] DEBUG -- : Requested path: "./public/lkdlfksdf"
+I, [2014-11-12T15:33:52.187108 #68545]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:33:52.224820 #68545] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:33:52.224923 #68545] DEBUG -- : Incoming request: #<Request:0x007ff66c088eb8 @method="GET", @resource="/lkdlfksdf", @version="HTTP/1.1">
+D, [2014-11-12T15:33:52.224962 #68545] DEBUG -- : Requested path: "./public/lkdlfksdf"
+I, [2014-11-12T15:33:52.225079 #68545]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:33:57.229899 #68545] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:33:57.230016 #68545] DEBUG -- : Incoming request: #<Request:0x007ff66c0605d0 @method="GET", @resource="/lkdlfksdf", @version="HTTP/1.1">
+D, [2014-11-12T15:33:57.230099 #68545] DEBUG -- : Requested path: "./public/lkdlfksdf"
+I, [2014-11-12T15:33:57.230231 #68545]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-12T15:34:04.248730 #68545] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-12T15:34:04.248856 #68545] DEBUG -- : Incoming request: #<Request:0x007ff66c051670 @method="GET", @resource="/lkdlfksdf.html", @version="HTTP/1.1">
+D, [2014-11-12T15:34:04.248936 #68545] DEBUG -- : Requested path: "./public/lkdlfksdf.html"
+I, [2014-11-12T15:34:04.249112 #68545]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-19T09:30:59.165169 #77453] DEBUG -- : Logging is set up.
+D, [2014-11-19T09:30:59.166740 #77453] DEBUG -- : Server is set up.
+D, [2014-11-19T09:30:59.380566 #77503] DEBUG -- : Logging is set up.
+D, [2014-11-19T09:30:59.592824 #77503] DEBUG -- : Server is set up.
+D, [2014-11-19T09:30:59.593195 #77503] DEBUG -- : Server is set up.
+D, [2014-11-19T09:30:59.594653 #77453] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:30:59.594758 #77453] DEBUG -- : Incoming request: #<Request:0x007fd63d80b388 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-19T09:30:59.594796 #77453] DEBUG -- : Requested path: "./public/index.html"
+D, [2014-11-19T09:31:15.178448 #77510] DEBUG -- : Logging is set up.
+D, [2014-11-19T09:31:15.179613 #77510] DEBUG -- : Server is set up.
+D, [2014-11-19T09:31:15.326152 #77560] DEBUG -- : Logging is set up.
+D, [2014-11-19T09:31:15.411359 #77510] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:31:15.411476 #77510] DEBUG -- : Incoming request: #<Request:0x007f81b300ade8 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-19T09:31:15.411533 #77510] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-19T09:31:15.412578 #77510]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-19T09:31:15.413204 #77560] DEBUG -- : Server is set up.
+D, [2014-11-19T09:31:15.414237 #77510] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:31:15.414427 #77510] DEBUG -- : Incoming request: #<Request:0x007f81b30093a8 @method="GET", @resource="/bad_request", @version="HTTP/1.1">
+D, [2014-11-19T09:31:15.414477 #77510] DEBUG -- : Requested path: "./public/bad_request"
+I, [2014-11-19T09:31:15.414930 #77510]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-19T09:31:15.415429 #77560] DEBUG -- : Server is set up.
+D, [2014-11-19T09:31:15.416616 #77510] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:31:15.416698 #77510] DEBUG -- : Incoming request: #<Request:0x007f81b3003a70 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-19T09:31:15.416737 #77510] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-19T09:31:15.416839 #77510]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-19T09:31:15.417444 #77560] DEBUG -- : Server is set up.
+D, [2014-11-19T09:31:15.418324 #77510] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:31:15.418487 #77510] DEBUG -- : Incoming request: #<Request:0x007f81b3001ec8 @method="GET", @resource="/test.png", @version="HTTP/1.1">
+D, [2014-11-19T09:31:15.418582 #77510] DEBUG -- : Requested path: "./public/test.png"
+I, [2014-11-19T09:31:15.420983 #77510]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+D, [2014-11-19T09:31:30.480061 #77567] DEBUG -- : Logging is set up.
+D, [2014-11-19T09:31:30.481158 #77567] DEBUG -- : Server is set up.
+D, [2014-11-19T09:31:30.639805 #77618] DEBUG -- : Logging is set up.
+D, [2014-11-19T09:31:30.730267 #77567] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:31:30.730387 #77567] DEBUG -- : Incoming request: #<Request:0x007fda39893350 @method="GET", @resource="/bad_request", @version="HTTP/1.1">
+D, [2014-11-19T09:31:30.730423 #77567] DEBUG -- : Requested path: "./public/bad_request"
+D, [2014-11-19T09:33:32.695234 #77622] DEBUG -- : Logging is set up.
+D, [2014-11-19T09:33:32.696482 #77622] DEBUG -- : Server is set up.
+D, [2014-11-19T09:33:32.846957 #77672] DEBUG -- : Logging is set up.
+D, [2014-11-19T09:33:32.932483 #77672] DEBUG -- : Server is set up.
+D, [2014-11-19T09:33:32.933953 #77622] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:33:32.934048 #77622] DEBUG -- : Incoming request: #<Request:0x007fb93380f860 @method="GET", @resource="/bad_request", @version="HTTP/1.1">
+D, [2014-11-19T09:33:32.934084 #77622] DEBUG -- : Requested path: "./public/bad_request"
+I, [2014-11-19T09:33:32.934185 #77622]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-19T09:33:32.935304 #77622] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:33:32.935439 #77622] DEBUG -- : Incoming request: #<Request:0x007fb93380e118 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-19T09:33:32.935476 #77622] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-19T09:33:32.935554 #77622]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-19T09:33:32.936188 #77672] DEBUG -- : Server is set up.
+D, [2014-11-19T09:33:32.937414 #77622] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:33:32.937570 #77622] DEBUG -- : Incoming request: #<Request:0x007fb93380c598 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-19T09:33:32.937627 #77622] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-19T09:33:32.937698 #77622]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-19T09:33:32.938779 #77622] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:33:32.938907 #77622] DEBUG -- : Incoming request: #<Request:0x007fb933806d00 @method="GET", @resource="/test.png", @version="HTTP/1.1">
+D, [2014-11-19T09:33:32.938945 #77622] DEBUG -- : Requested path: "./public/test.png"
+I, [2014-11-19T09:33:32.939019 #77622]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+D, [2014-11-19T09:33:32.939619 #77672] DEBUG -- : Server is set up.
+D, [2014-11-19T09:33:41.446380 #77678] DEBUG -- : Logging is set up.
+D, [2014-11-19T09:33:41.447504 #77678] DEBUG -- : Server is set up.
+D, [2014-11-19T09:33:41.602455 #77728] DEBUG -- : Logging is set up.
+D, [2014-11-19T09:33:41.686093 #77728] DEBUG -- : Server is set up.
+D, [2014-11-19T09:33:41.687545 #77678] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:33:41.687650 #77678] DEBUG -- : Incoming request: #<Request:0x007f825a893788 @method="GET", @resource="/bad_request", @version="HTTP/1.1">
+D, [2014-11-19T09:33:41.687687 #77678] DEBUG -- : Requested path: "./public/bad_request"
+I, [2014-11-19T09:33:41.687772 #77678]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-19T09:33:41.688950 #77678] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:33:41.689124 #77678] DEBUG -- : Incoming request: #<Request:0x007f825a8920b8 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-19T09:33:41.689161 #77678] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-19T09:33:41.689238 #77678]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-19T09:33:41.689830 #77728] DEBUG -- : Server is set up.
+D, [2014-11-19T09:33:41.691737 #77678] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:33:41.691859 #77678] DEBUG -- : Incoming request: #<Request:0x007f825a8905b0 @method="GET", @resource="/test.png", @version="HTTP/1.1">
+D, [2014-11-19T09:33:41.691920 #77678] DEBUG -- : Requested path: "./public/test.png"
+I, [2014-11-19T09:33:41.691988 #77678]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+D, [2014-11-19T09:33:41.693010 #77678] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:33:41.693169 #77678] DEBUG -- : Incoming request: #<Request:0x007f825a88adb8 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-19T09:33:41.693204 #77678] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-19T09:33:41.693274 #77678]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-19T09:33:41.693927 #77728] DEBUG -- : Server is set up.
+D, [2014-11-19T09:34:05.241636 #77735] DEBUG -- : Logging is set up.
+D, [2014-11-19T09:34:05.242708 #77735] DEBUG -- : Server is set up.
+D, [2014-11-19T09:34:05.388382 #77785] DEBUG -- : Logging is set up.
+D, [2014-11-19T09:34:05.471866 #77735] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:34:05.472006 #77735] DEBUG -- : Incoming request: #<Request:0x007ff363093400 @method="GET", @resource="/test.png", @version="HTTP/1.1">
+D, [2014-11-19T09:34:05.472046 #77735] DEBUG -- : Requested path: "./public/test.png"
+I, [2014-11-19T09:34:05.472436 #77735]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+D, [2014-11-19T09:34:05.473694 #77785] DEBUG -- : Server is set up.
+D, [2014-11-19T09:34:05.474687 #77735] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:34:05.474860 #77735] DEBUG -- : Incoming request: #<Request:0x007ff363091a88 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-19T09:34:05.474901 #77735] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-19T09:34:05.475014 #77735]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-19T09:34:05.476422 #77735] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:34:05.476608 #77735] DEBUG -- : Incoming request: #<Request:0x007ff3630900c0 @method="GET", @resource="/bad_request", @version="HTTP/1.1">
+D, [2014-11-19T09:34:05.476644 #77735] DEBUG -- : Requested path: "./public/bad_request"
+I, [2014-11-19T09:34:05.476748 #77735]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-19T09:34:05.477324 #77785] DEBUG -- : Server is set up.
+D, [2014-11-19T09:34:05.477713 #77785] DEBUG -- : Server is set up.
+D, [2014-11-19T09:34:05.478629 #77735] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:34:05.478759 #77735] DEBUG -- : Incoming request: #<Request:0x007ff36308a7b0 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-19T09:34:05.478795 #77735] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-19T09:34:05.478894 #77735]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-19T09:36:38.749377 #77804] DEBUG -- : Logging is set up.
+D, [2014-11-19T09:36:38.750529 #77804] DEBUG -- : Server is set up.
+D, [2014-11-19T09:36:38.904365 #77854] DEBUG -- : Logging is set up.
+D, [2014-11-19T09:36:38.988463 #77854] DEBUG -- : Server is set up.
+D, [2014-11-19T09:36:38.989884 #77804] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:36:38.989992 #77804] DEBUG -- : Incoming request: #<Request:0x007fcbe0893330 @method="GET", @resource="/bad_request", @version="HTTP/1.1">
+D, [2014-11-19T09:36:38.990030 #77804] DEBUG -- : Requested path: "./public/bad_request"
+I, [2014-11-19T09:36:38.990160 #77804]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-19T09:36:38.991125 #77804] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:36:38.991269 #77804] DEBUG -- : Incoming request: #<Request:0x007fcbe08919e0 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-19T09:36:38.991309 #77804] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-19T09:36:38.991413 #77804]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-19T09:36:38.991874 #77854] DEBUG -- : Server is set up.
+D, [2014-11-19T09:36:38.993311 #77854] DEBUG -- : Server is set up.
+D, [2014-11-19T09:36:38.994086 #77804] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:36:38.994199 #77804] DEBUG -- : Incoming request: #<Request:0x007fcbe08914e0 @method="GET", @resource="/", @version="HTTP/1.1">
+D, [2014-11-19T09:36:38.994233 #77804] DEBUG -- : Requested path: "./public/index.html"
+I, [2014-11-19T09:36:38.994331 #77804]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+D, [2014-11-19T09:36:38.995266 #77804] DEBUG -- : Accepted socket: #<TCPSocket:fd 11>
+D, [2014-11-19T09:36:38.995347 #77804] DEBUG -- : Incoming request: #<Request:0x007fcbe088a6b8 @method="GET", @resource="/test.png", @version="HTTP/1.1">
+D, [2014-11-19T09:36:38.995381 #77804] DEBUG -- : Requested path: "./public/test.png"
+I, [2014-11-19T09:36:38.995760 #77804]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+I, [2014-11-19T09:49:55.786206 #77948]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+I, [2014-11-19T09:49:55.788036 #77948]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+I, [2014-11-19T09:49:55.790801 #77948]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+I, [2014-11-19T09:49:55.792121 #77948]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+I, [2014-11-19T10:41:32.612909 #78109]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+I, [2014-11-19T10:41:32.614301 #78109]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+I, [2014-11-19T10:41:32.616974 #78109]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+I, [2014-11-19T10:41:32.621465 #78109]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+I, [2014-11-19T10:41:43.989082 #78165]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+I, [2014-11-19T10:41:43.990973 #78165]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+I, [2014-11-19T10:41:43.993134 #78165]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+I, [2014-11-19T10:41:43.997605 #78165]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+I, [2015-02-09T13:32:10.325804 #61552]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+I, [2015-02-09T13:32:10.427471 #61552]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+I, [2015-02-10T20:54:08.044583 #16334]  INFO -- : HTTP/1.1 404Not Found
+Content-Type: application/octet-stream
+Content-Length: 111
+Connection: close
+
+
+I, [2015-02-10T20:54:08.046122 #16334]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+I, [2015-02-10T20:54:08.052545 #16334]  INFO -- : HTTP/1.1 200OK
+Content-Type: image/png
+Content-Length: 440733
+Connection: close
+
+
+I, [2015-02-10T20:54:08.054675 #16334]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+I, [2015-02-10T21:03:05.239280 #16748]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+I, [2015-02-10T21:04:05.628243 #16748]  INFO -- : HTTP/1.1 200OK
+Content-Type: text/html
+Content-Length: 111
+Connection: close
+
+
+I, [2015-02-11T14:42:00.846969 #40414]  INFO -- : GET / HTTP/1.1
+I, [2015-02-11T14:42:00.847765 #40414]  INFO -- : Host: localhost:2345
+I, [2015-02-11T14:42:00.847797 #40414]  INFO -- : Connection: keep-alive
+I, [2015-02-11T14:42:00.847812 #40414]  INFO -- : Cache-Control: max-age=0
+I, [2015-02-11T14:42:00.847825 #40414]  INFO -- : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+I, [2015-02-11T14:42:00.847868 #40414]  INFO -- : User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36
+I, [2015-02-11T14:42:00.847881 #40414]  INFO -- : Accept-Encoding: gzip, deflate, sdch
+I, [2015-02-11T14:42:00.847892 #40414]  INFO -- : Accept-Language: en-US,en;q=0.8
+I, [2015-02-11T14:42:00.848817 #40414]  INFO -- : HTTP/1.1 200/OK
+I, [2015-02-11T14:42:00.848880 #40414]  INFO -- : Content-Type: text/html
+I, [2015-02-11T14:42:00.848911 #40414]  INFO -- : Content-Length: 340
+I, [2015-02-11T14:42:00.848937 #40414]  INFO -- : Connection: close
