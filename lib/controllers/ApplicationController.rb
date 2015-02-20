@@ -1,5 +1,5 @@
 class ApplicationController
 	def run
-		return "CREATE THIS METHOD"
+		raise "CREATE THIS METHOD"
 	end
 end
