@@ -6,6 +6,7 @@ class Response
   def initialize(header, body)
     @header = header
     @body = body
+    puts body.object_id
   end
 
 	RESPONSE_CODE = {
@@ -49,20 +50,26 @@ class Response
       header = build_header(RESPONSE_CODE.rassoc('Not Found').join("/"),
                            content_type(path),
                            body_size)
+      puts body.object_id
       Response.new(header, body)
     end
   end
 
   def self.post(request)
-    hash_of_body = {}
+    params = {}
     array_of_body = (request.body).split("&")
     array_of_body.each do |word|
       key, value = word.split("=")
-      hash_of_body[key] = value
+      params[key] = value
     end
+    # if request.resource? == 'decide'
+    #   body = BoardController.new.run(params)
+    # elsif request.resource? == 'turn'
+    #   body = GameController.new.run(params)
+    # end
     header = "HTTP/1.1 #{RESPONSE_CODE.rassoc('OK').join("/")}\r\n" + 
              "Content-Type: text/plain\r\n\r\n"
-    Response.new(header, hash_of_body)
+    Response.new(header, body)
   end
   
   def self.clean_path(path)

@@ -42,6 +42,7 @@ class SimpleServer
           LOG.debug("Built response: #{response.inspect}\r\n")
           socket.print response.header
           socket.print response.stream
+          puts response.body.object_id
           logging_string(response.header)
           socket.close
         end
