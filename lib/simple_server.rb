@@ -40,10 +40,9 @@ class SimpleServer
           LOG.debug("Incoming request: #{request.inspect}\r\n")
           response = Response.build(request)
           LOG.debug("Built response: #{response.inspect}\r\n")
+          logging_string(response.header)
           socket.print response.header
           socket.print response.stream
-          puts response.body.object_id
-          logging_string(response.header)
           socket.close
         end
       end

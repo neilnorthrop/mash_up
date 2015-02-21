@@ -10,7 +10,5 @@
     %h3 Pick your board size and opponent:
 
     %form{ :action => "/decide", :method => "post" }
-      %input{ :type => "radio", :name => "board", :id => "3x3", :value => "" } 3x3
-      %input{ :type => "radio", :name => "board", :id => "4x4", :value => "4x4" } 4x4
       %input{ :type => "submit", :name => "opponent", :id => "computer", :value => "Computer" }
       %input{ :type => "submit", :name => "opponent", :id => "player", :value => "Player" }

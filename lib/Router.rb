@@ -1,5 +1,5 @@
 class Router
 	def self.draw
-		puts yield
+		Router.new.instance_eval
 	end
 end

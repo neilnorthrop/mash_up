@@ -1,4 +1,7 @@
 require 'socket'
+require './lib/controllers/BoardController.rb'
+require './lib/controllers/GameController.rb'
+require 'pp'
 
 class Response
   attr_reader :header, :body
@@ -6,7 +9,6 @@ class Response
   def initialize(header, body)
     @header = header
     @body = body
-    puts body.object_id
   end
 
 	RESPONSE_CODE = {
@@ -38,20 +40,11 @@ class Response
 
   def self.get(request)
     path = clean_path(request.resource)
-    path = File.join(path, 'index.html') if File.directory?(path)
+    path = File.join(path, 'game.html') if File.directory?(path)
     if File.exist?(path) && !File.directory?(path)
-      body, body_size = build_body(path)
-      header = build_header(RESPONSE_CODE.rassoc('OK').join("/"),
-                           content_type(path),
-                           body_size)
-      Response.new(header, body)
+      file_200(path)
     else
-      body, body_size = build_body(NOT_FOUND)
-      header = build_header(RESPONSE_CODE.rassoc('Not Found').join("/"),
-                           content_type(path),
-                           body_size)
-      puts body.object_id
-      Response.new(header, body)
+      file_404(path)
     end
   end
 
@@ -62,13 +55,18 @@ class Response
       key, value = word.split("=")
       params[key] = value
     end
-    # if request.resource? == 'decide'
-    #   body = BoardController.new.run(params)
-    # elsif request.resource? == 'turn'
-    #   body = GameController.new.run(params)
-    # end
+    if request.resource == "/decide"
+      board_controller = BoardController.new
+      body = board_controller.run(params)
+      puts body
+    elsif request.resource == '/turn'
+      game_controller = GameController.new
+      body = game_controller.run(params)
+    end
     header = "HTTP/1.1 #{RESPONSE_CODE.rassoc('OK').join("/")}\r\n" + 
-             "Content-Type: text/plain\r\n\r\n"
+             "Content-Type: text/html\r\n" +
+             "Content-Length: 2100\r\n" +
+             "Connection: close\r\n\r\n"
     Response.new(header, body)
   end
   
@@ -102,10 +100,26 @@ class Response
   end
 
   def stream
-    if self.body.is_a?(File)
-      File.read(self.body)
+    if body.is_a?(File)
+      File.read(body)
     else
-      return self.body
+      return body
     end
+  end
+
+  def self.file_200(path)
+    body, body_size = build_body(path)
+    header = build_header(RESPONSE_CODE.rassoc('OK').join("/"),
+                         content_type(path),
+                         body_size)
+    Response.new(header, body)
+  end
+
+  def self.file_404(path)
+    body, body_size = build_body(NOT_FOUND)
+    header = build_header(RESPONSE_CODE.rassoc('Not Found').join("/"),
+                         content_type(path),
+                         body_size)
+    Response.new(header, body)
   end
 end
