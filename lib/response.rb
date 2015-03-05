@@ -21,7 +21,9 @@ class Response
     'txt'  => 'text/plain',
     'png'  => 'image/png',
     'jpg'  => 'image/jpg',
-    'haml' => 'text/html'
+    'haml' => 'text/html',
+    'css'  => 'text/css',
+    'js'   => 'application/javascript'
   }
 
   DEFAULT_CONTENT_TYPE = 'application/octet-stream'
@@ -49,24 +51,19 @@ class Response
   end
 
   def self.post(request)
-    params = {}
-    array_of_body = (request.body).split("&")
-    array_of_body.each do |word|
-      key, value = word.split("=")
-      params[key] = value
-    end
     if request.resource == "/decide"
       board_controller = BoardController.new
-      body = board_controller.run(params)
-      puts body
+      body = board_controller.run(request.body)
     elsif request.resource == '/turn'
       game_controller = GameController.new
-      body = game_controller.run(params)
+      body = game_controller.run(request.body)
     end
     header = "HTTP/1.1 #{RESPONSE_CODE.rassoc('OK').join("/")}\r\n" + 
              "Content-Type: text/html\r\n" +
-             "Content-Length: 2100\r\n" +
+             "Content-Length: #{body.size}\r\n" +
+             "Set-Cookie: #{request.session_id if request.session_id}\r\n" +
              "Connection: close\r\n\r\n"
+    puts "BUILT HEADER"
     Response.new(header, body)
   end
   

@@ -8,7 +8,7 @@
   %h1 Welcome to Tic Tac Toe!
   %body
     .board
-      - (1..9).each do |cell|
+      - board.each do |cell|
         %form{:action => "/turn", :method => "post"}
           %input{:type => "hidden", :name => "player_move", :value => "#{cell}"}
           %input.cell{:type => "submit", :id => "cell#{cell}", :value => "#{cell}" }

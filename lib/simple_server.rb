@@ -4,7 +4,7 @@ require_relative 'request'
 require_relative 'response'
 
 class SimpleServer
-  attr_reader :server, :level, :output, :host, :port
+  attr_reader :server, :level, :output, :host, :port, :sessions
 
   READ_CHUNK = 1024 * 4
 
@@ -16,6 +16,7 @@ class SimpleServer
     @port = port
     @server = TCPServer.new(host, port)
     LOG.debug("Server is set up.")
+    @sessions = {}
   end
 
   def server_info
@@ -37,9 +38,12 @@ class SimpleServer
           logging_string(data)
           
           request = Request.parse(data)
-          LOG.debug("Incoming request: #{request.inspect}\r\n")
+          LOG.debug("Incoming request: #{request}\r\n")
+          if request.session_id == nil
+            request.session_id = SecureRandom.hex(13)
+          end
           response = Response.build(request)
-          LOG.debug("Built response: #{response.inspect}\r\n")
+          LOG.debug("Built response: #{response}\r\n")
           logging_string(response.header)
           socket.print response.header
           socket.print response.stream
