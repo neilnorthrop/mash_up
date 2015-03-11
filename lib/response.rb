@@ -1,6 +1,4 @@
 require 'socket'
-require './lib/controllers/BoardController.rb'
-require './lib/controllers/GameController.rb'
 require 'pp'
 
 class Response
@@ -51,20 +49,12 @@ class Response
   end
 
   def self.post(request)
-    if request.resource == "/decide"
-      board_controller = BoardController.new
-      body = board_controller.run(request.body)
-    elsif request.resource == '/turn'
-      game_controller = GameController.new
-      body = game_controller.run(request.body)
-    end
     header = "HTTP/1.1 #{RESPONSE_CODE.rassoc('OK').join("/")}\r\n" + 
              "Content-Type: text/html\r\n" +
-             "Content-Length: #{body.size}\r\n" +
+             "Content-Length: #{request.body.size}\r\n" +
              "Set-Cookie: #{request.session_id if request.session_id}\r\n" +
              "Connection: close\r\n\r\n"
-    puts "BUILT HEADER"
-    Response.new(header, body)
+    Response.new(header, request.body)
   end
   
   def self.clean_path(path)

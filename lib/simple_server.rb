@@ -2,6 +2,12 @@ require 'socket'
 require_relative 'logging'
 require_relative 'request'
 require_relative 'response'
+require './lib/player.rb'
+require './lib/computer_ai.rb'
+require './lib/board.rb'
+require './lib/game.rb'
+require './lib/controllers/BoardController.rb'
+require './lib/controllers/GameController.rb'
 
 class SimpleServer
   attr_reader :server, :level, :output, :host, :port, :sessions
@@ -17,6 +23,7 @@ class SimpleServer
     @server = TCPServer.new(host, port)
     LOG.debug("Server is set up.")
     @sessions = {}
+    @game = setup_game
   end
 
   def server_info
@@ -42,6 +49,13 @@ class SimpleServer
           if request.session_id == nil
             request.session_id = SecureRandom.hex(13)
           end
+          # if request.resource == "/decide"
+          #   board_controller = BoardController.new
+          #   request.body = board_controller.run(request.body, game)
+          # elsif request.resource == '/turn'
+          #   game_controller = GameController.new
+          #   request.body = game_controller.run(request.body, game)
+          # end
           response = Response.build(request)
           LOG.debug("Built response: #{response}\r\n")
           logging_string(response.header)
@@ -60,5 +74,12 @@ class SimpleServer
     string.each do |line|
       LOG.info(line)
     end
+  end
+
+  def setup_game
+    board = Board.new
+    player_one = Player.new(WebMover.new, 'X')
+    player_two = ComputerMover.new(board, player_one.letter), 'O'
+    return Game.new(Board.new, player_one, player_two)
   end
 end
