@@ -1,8 +1,8 @@
 require 'securerandom'
 
 class Request
-	attr_reader :method, :resource, :version, :body
-  attr_accessor :session_id
+	attr_reader :method, :resource, :version
+  attr_accessor :session_id, :body
 
 	def initialize(method, resource, version, body=nil, session=nil)
 		@method = method

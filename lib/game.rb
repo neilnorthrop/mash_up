@@ -1,7 +1,7 @@
 #! /usr/bin/env ruby
 
 class Game
-  attr_reader :board, :current_player
+  attr_accessor :board, :current_player
 
   def initialize(board, player_one, player_two)
     @board = board

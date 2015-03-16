@@ -8,11 +8,13 @@
   %h1 Welcome to Tic Tac Toe!
   %body
     .board
-      - board.each do |cell|
+      - board.board.each do |cell|
         %form{:action => "/turn", :method => "post"}
           %input{:type => "hidden", :name => "player_move", :value => "#{cell}"}
           %input.cell{:type => "submit", :id => "cell#{cell}", :value => "#{cell}" }
       
-    %a{:href => "/"} Click to play again!
-    :javascript
-      disableButton();
+    - if board.game_over?
+      %h3= "#{board.game_over_message}"
+      %a{:href => "/"} Click to play again!
+      :javascript
+        disableButton();

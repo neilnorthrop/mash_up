@@ -10,12 +10,12 @@ class Board
   end
 
   def set_position(position, letter)
-    (valid_position(position) && position_empty(position)) ? (@board[find_index(position)] = letter) ? true : false : false
-    # if valid_position(position) && position_empty(position)
-    #   @board[find_index(position)] = letter
-    # else
-    #   false
-    # end
+    # (valid_position(position) && position_empty(position)) ? (@board[find_index(position)] = letter) ? true : false : false
+    if valid_position(position) && position_empty(position)
+      @board[find_index(position)] = letter
+    else
+      false
+    end
   end
 
   def valid_position(position)

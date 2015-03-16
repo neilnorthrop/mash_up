@@ -35,13 +35,16 @@ class ConsoleMover < Mover
 end
 
 class ComputerMover < Mover
+  attr_accessor :letter
+  
   def initialize(board, opponent)
     @board = board
     @opponent = opponent
+    @letter = "O"
   end
 
   def get_move(_args = {})
-    ComputerAI.get_move(@board, 'O', @opponent)
+    ComputerAI.get_move(@board, @letter, @opponent)
   end
 
   def requires_interaction?
@@ -51,6 +54,6 @@ end
 
 class WebMover < Mover
   def get_move(args = {})
-    args[:player_move].to_i
+    args["player_move"].to_i
   end
 end
